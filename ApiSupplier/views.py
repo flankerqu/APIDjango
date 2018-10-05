@@ -12,7 +12,7 @@ def get_num_list(request):
     num = []
     for i in range(10):
         num.append(i)
-    return JsonResponse({'data': num})
+    return JsonResponse(num)
 
 def get_obj(request):
     obj = {
@@ -20,3 +20,4 @@ def get_obj(request):
         "b": 2,
         "c": 3
     }
+    return JsonResponse(obj)
